@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Lesson1</string>
+    <string name="button_name">кнопка</string>
+    <string name="click_is">click is</string>
 </resources>
