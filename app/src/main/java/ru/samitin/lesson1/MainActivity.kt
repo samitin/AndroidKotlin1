@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import ru.samitin.lesson1.data.KeyValue
 
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,5 +27,17 @@ class MainActivity : AppCompatActivity() {
         textKey.setText(textKey.text.toString()+keyValue.key)
         val textValue:TextView=findViewById(R.id.text_value)
         textValue.setText(textValue.text.toString()+keyValue.value)
+        val textObj:TextView=findViewById(R.id.text_obj)
+        val obg=object {
+            val obj1= ObjVaiue("one","two")
+            val obj2=obj1.copy();
+            val textObj:TextView=findViewById(R.id.text_obj)
+            fun setTextObj(){
+                textObj.setText(obj2.value1+" "+obj2.value2)
+            }
+        }
+        obg.setTextObj()
+
     }
+    data class ObjVaiue(var value1:String="value1", val value2:String="value2")
 }

@@ -7,7 +7,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <TextView
+        android:id="@+id/text_obj"
+        android:textSize="@dimen/text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
     <TextView
         android:id="@+id/text_key"
         android:textSize="@dimen/text_size"
