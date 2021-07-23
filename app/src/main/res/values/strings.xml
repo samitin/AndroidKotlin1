@@ -2,4 +2,6 @@
     <string name="app_name">Lesson1</string>
     <string name="button_name">кнопка</string>
     <string name="click_is">click is</string>
+    <string name="text_key">key = </string>
+    <string name="text_value">value = </string>
 </resources>
