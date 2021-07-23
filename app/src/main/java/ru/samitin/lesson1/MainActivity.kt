@@ -37,6 +37,25 @@ class MainActivity : AppCompatActivity() {
             }
         }
         obg.setTextObj()
+        val strings= listOf<String>("one","two","three")
+        var str:String=""
+        for(s in strings)
+            str=str+s+" "
+        findViewById<TextView>(R.id.text_cikle1).setText(str)
+        str=""
+        for (i in 1..10)
+            str+=""+i+" "
+        findViewById<TextView>(R.id.text_cikle2).setText(str)
+        str=""
+        for(i in 10 downTo 1 step 2)
+            str+=""+i+" "
+        findViewById<TextView>(R.id.text_cikle3).setText(str)
+        str=""
+        for (i in 0 until strings.size)
+           str+=strings[i]
+        findViewById<TextView>(R.id.text_cikle4).setText(str)
+
+
 
     }
     data class ObjVaiue(var value1:String="value1", val value2:String="value2")
