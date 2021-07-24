@@ -7,48 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <TextView
-        android:id="@+id/text_cikle4"
-        android:textSize="@dimen/text_size"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""/>
-    <TextView
-        android:id="@+id/text_cikle3"
-        android:textSize="@dimen/text_size"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""/>
-    <TextView
-        android:id="@+id/text_cikle2"
-        android:textSize="@dimen/text_size"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""/>
-    <TextView
-        android:id="@+id/text_cikle1"
-        android:textSize="@dimen/text_size"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""/>
-    <TextView
-        android:id="@+id/text_obj"
-        android:textSize="@dimen/text_size"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""/>
-    <TextView
-        android:id="@+id/text_key"
-        android:textSize="@dimen/text_size"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_key" />
-    <TextView
-        android:id="@+id/text_value"
-        android:textSize="@dimen/text_size"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_value" />
+
     <TextView
         android:id="@+id/text"
         android:textSize="@dimen/text_size"

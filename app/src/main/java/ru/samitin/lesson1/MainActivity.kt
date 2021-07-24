@@ -23,17 +23,13 @@ class MainActivity : AppCompatActivity() {
             }
         } )
         val keyValue=KeyValue("Ключь","Значение")
-        val textKey:TextView=findViewById(R.id.text_key);
-        textKey.setText(textKey.text.toString()+keyValue.key)
-        val textValue:TextView=findViewById(R.id.text_value)
-        textValue.setText(textValue.text.toString()+keyValue.value)
-        val textObj:TextView=findViewById(R.id.text_obj)
+        println(keyValue.key+" "+keyValue.value)
+
         val obg=object {
             val obj1= ObjVaiue("one","two")
             val obj2=obj1.copy();
-            val textObj:TextView=findViewById(R.id.text_obj)
             fun setTextObj(){
-                textObj.setText(obj2.value1+" "+obj2.value2)
+                println(obj2.value1+" "+obj2.value2)
             }
         }
         obg.setTextObj()
@@ -41,19 +37,19 @@ class MainActivity : AppCompatActivity() {
         var str:String=""
         for(s in strings)
             str=str+s+" "
-        findViewById<TextView>(R.id.text_cikle1).setText(str)
+       println(str)
         str=""
         for (i in 1..10)
             str+=""+i+" "
-        findViewById<TextView>(R.id.text_cikle2).setText(str)
+        println(str)
         str=""
         for(i in 10 downTo 1 step 2)
             str+=""+i+" "
-        findViewById<TextView>(R.id.text_cikle3).setText(str)
+       println(str)
         str=""
         for (i in 0 until strings.size)
-           str+=strings[i]
-        findViewById<TextView>(R.id.text_cikle4).setText(str)
+           str+=strings[i]+" "
+        println(str)
 
 
 
